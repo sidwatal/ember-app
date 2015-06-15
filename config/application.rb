@@ -24,7 +24,7 @@ module EmberApp
     config.active_record.raise_in_transactional_callbacks = true
 
     config.action_dispatch.default_headers.merge!({
-      'Access-Control-Allow-Origin' => 'http://localhost:4200',
+      'Access-Control-Allow-Origin' => '*',
       'Access-Control-Request-Method' => '*'
     })
   end
