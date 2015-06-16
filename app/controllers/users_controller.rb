@@ -4,6 +4,14 @@ class UsersController < ApplicationController
 		render json: User.with_deleted, root: "users"
 	end
 
+	def deleted_users
+		render json: User.only_deleted, root: "users"
+	end
+
+	def all_users
+		render json: User.with_deleted, root: "users"
+	end
+
 	def create
 		user = User.new(user_params)
 		user.save!
