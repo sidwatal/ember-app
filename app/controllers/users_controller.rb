@@ -1,13 +1,6 @@
 class UsersController < ApplicationController
 	
 	def index
-		# if params[:query] == "with_deleted"
-		# 	render json: User.with_deleted, root: "users"
-		# elsif params[:query] == "only_deleted"
-		# 	render json: User.only_deleted, root: "users"
-		# else
-		# 	render json: User.all, root: "users"
-		# end
 		params[:query] ||= "all"
 		render json: User.send(params[:query]), root: "users"
 	end
