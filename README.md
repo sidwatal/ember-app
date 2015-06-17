@@ -1,5 +1,5 @@
 # ember-app
-Rails backend for ember birthday app
+Rails backend for ember birthday app [here](https://github.com/sidwatal/ember-app-fe)
 
 `bundle install`
 
